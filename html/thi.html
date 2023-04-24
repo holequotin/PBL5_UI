@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website thi JLPT</title>
+    <link rel="stylesheet" href="stylethi.css" />
+  </head>
+  <body>
+    <header>
+      <h2 class="logo">JLPT</h2>
+      <nav class="navigation">
+        <a href="../index.html">Trang chủ</a>
+        <a href="../html/thi.html">Thi JLPT</a>
+        <a href="#">Tài liệu free</a>
+        <a href="#">Sách học JLPT</a>
+        <a href="#">Đề thi chuẩn JLPT</a>
+        <button class="userInfo">user001</button>
+      </nav>
+    </header>
+    <div class="wrapper">
+      <div class="user">
+        <div class="accountImage">
+          <img src="../image/userImage.png" alt="">
+        </div>
+        <div class="user-info">
+          <h3 class="username">Phan Phước Sang</h3>
+          <p class="user-id">ID: 0001</p>
+        </div>
+      </div>
+      
+      <div class="option">
+        <button class="btnThithat"><h2>Thi thật</h2></button>
+        <button class="btnThithu"><h2>Thi thử</h2></button>
+      </div>
+    </div>
+    <script>
+      // Lấy đối tượng button bằng ID
+      // var btnThithat = document.getElementById("btnThithat");
+      var btnThithu = document.querySelector(".btnThithu");
+
+      // Thêm sự kiện click cho button
+      btnThithu.addEventListener("click", function(){
+        // Chuyển đến trang mới khi bấm nút
+        window.location.href = "thithu.html";
+      });
+
+      var btnThithat = document.querySelector(".btnThithat");
+
+      // Thêm sự kiện click cho button
+      btnThithat.addEventListener("click", function(){
+        // Chuyển đến trang mới khi bấm nút
+        window.location.href = "thithat.html";
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website thi JLPT</title>
+    <link rel="stylesheet" href="stylethithu.css" />
+
+    <style>
+      .container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    }
+
+    .left {
+    flex: 0 0 70%; /* Thay đổi chiều rộng của phần tử left */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 0 2px #000;
+    position: relative;
+    }
+
+    .left img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: fill;
+    }
+
+    .left h2 {
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    }
+
+    .right {
+    flex: 0 0 30%; /* Thay đổi chiều rộng của phần tử right */
+    display: flex;
+    flex-direction: column; /* Sắp xếp các button dọc */
+    justify-content: center; /* Can giữa các button theo chiều ngang */
+    align-items: flex-end; /* Can phải các button */
+    }
+
+button {
+  margin-bottom: 10px; /* Khoảng cách giữa các button */
+}
+    
+    </style>
+  </head>
+  <body>
+    <header>
+      <h2 class="logo">JLPT</h2>
+      <nav class="navigation">
+        <a href="../index.html">Trang chủ</a>
+        <a href="../html/thi.html">Thi JLPT</a>
+        <a href="#">Tài liệu free</a>
+        <a href="#">Sách học JLPT</a>
+        <a href="#">Đề thi chuẩn JLPT</a>
+        <button class="userInfo">user001</button>
+      </nav>
+    </header>
+    <div class="wrapper">
+      <div class="left">
+        <img src="../image/tryyourbest.jfif" alt="Your Image">
+        <h2>Thi JLPT</h2>
+      </div>
+      <div class="right">
+        <div id="buttons-container"></div>
+      </div>
+    </div>
+    <script src="../script/scriptthithat.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
