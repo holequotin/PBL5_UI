@@ -20,35 +20,37 @@
     
 </head>
 <body>
-    <div class="container-fluid d-flex justify-content-end" style="background-color: #303030;" id="user-info">
-        <img src="../images/avatar.jpeg" alt="" height="40px" width="40px">
-        <div class="dropdown">
-            <button class="btn btn-outline dropdown-toggle border-0 menu" type="button" id="triggerId"
-                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Xin chào! Phan Phước Sang
-            </button>
-            <div class="dropdown-menu" aria-labelledby="triggerId">
-                <a class="dropdown-item" href="#"><i class="bi bi-person-circle"></i>Thông tin tài khoản</a>
-                <a class="dropdown-item" href="#"><i class="bi bi-key-fill"></i>Đổi mật khẩu</a>
-                <a class="dropdown-item" href="#"><i class="bi bi-file-earmark-fill"></i>Lịch sử làm bài</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#"><i class="bi bi-box-arrow-right"></i>Đăng xuất</a>
+    <div class="head sticky-top">
+        <div class="container-fluid d-flex justify-content-end" style="background-color: #303030;" id="user-info">
+            <img src="../images/avatar.jpeg" alt="" height="40px" width="40px">
+            <div class="dropdown">
+                <button class="btn btn-outline dropdown-toggle border-0 menu" type="button" id="triggerId"
+                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Xin chào! Phan Phước Sang
+                </button>
+                <div class="dropdown-menu" aria-labelledby="triggerId">
+                    <a class="dropdown-item" href="#"><i class="bi bi-person-circle"></i>Thông tin tài khoản</a>
+                    <a class="dropdown-item" href="#"><i class="bi bi-key-fill"></i>Đổi mật khẩu</a>
+                    <a class="dropdown-item" href="#"><i class="bi bi-file-earmark-fill"></i>Lịch sử làm bài</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#"><i class="bi bi-box-arrow-right"></i>Đăng xuất</a>
+                </div>
             </div>
         </div>
+        </div>
+        <div class="container-fluid navbar d-flex-inline justify-content-end align-item-center gap-5">
+            <center class="navbar-item"><a href="">Trang chủ</a></center>
+            <center class="navbar-item"><a href="">Cập nhật JLPT 2023</a></center>
+            <center class="navbar-item"><a href="">Tài liệu free</a></center>
+            <center class="navbar-item"><a href="">Sách học JLPT</a></center>
+            <center class="navbar-item"><a href="">Đề thi chuẩn JLPT</a></center>
+            <a class="btn btn-test" href="">Vào thi ngay</a>
+        </div>
     </div>
-    </div>
-
-    <div class="container-fluid navbar d-flex-inline justify-content-end align-item-center gap-5">
-        <center class="navbar-item"><a href="">Trang chủ</a></center>
-        <center class="navbar-item"><a href="">Cập nhật JLPT 2023</a></center>
-        <center class="navbar-item"><a href="">Tài liệu free</a></center>
-        <center class="navbar-item"><a href="">Sách học JLPT</a></center>
-        <center class="navbar-item"><a href="">Đề thi chuẩn JLPT</a></center>
-        <a class="btn btn-test" href="">Vào thi ngay</a>
-    </div>
-
+    
+    <!-- content -->
     <div class="container-fluid content mt-3">
-        <div class="row">
+        <div class="row mb-5">
             <div class="col-sm-4">
                 <form class="d-flex">
                     <input class="form-control me-2" type="search" placeholder="Nhập tên đề thi" aria-label="Search">
@@ -72,6 +74,62 @@
             <div class="col-sm-2">
                 <button class="btn btn-success"><i class="bi bi-file-earmark-plus"></i>Thêm đề thi</button>
             </div>
+        </div>
+        <div class="row">
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">STT</th>
+                    <th scope="col">Tên đề</th>
+                    <th scope="col">Cấp độ</th>
+                    <th scope="col">Ảnh</th>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>JLPT2019</td>
+                    <td>N3</td>
+                    <td><img src="https://th.bing.com/th/id/OIP.Mfv760VApdREuyqGlGwjFgAAAA?w=255&h=85&c=7&r=0&o=5&dpr=1.3&pid=1.7"></td>
+                    <td><button class="btn btn-outline-danger"><i class="bi bi-trash"></i></button></td>
+                    <td><button class="btn btn-outline-primary"><i class="bi bi-pen"></i></button></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>JLPT2020</td>
+                    <td>N3</td>
+                    <td><img src="https://th.bing.com/th/id/OIP.Mfv760VApdREuyqGlGwjFgAAAA?w=255&h=85&c=7&r=0&o=5&dpr=1.3&pid=1.7"></td>
+                    <td><button class="btn btn-outline-danger"><i class="bi bi-trash"></i></button></td>
+                    <td><button class="btn btn-outline-primary"><i class="bi bi-pen"></i></button></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Ngữ pháp N3</td>
+                    <td>N3</td>
+                    <td><img src="https://th.bing.com/th/id/OIP.Mfv760VApdREuyqGlGwjFgAAAA?w=255&h=85&c=7&r=0&o=5&dpr=1.3&pid=1.7"></td>
+                    <td><button class="btn btn-outline-danger"><i class="bi bi-trash"></i></button></td>
+                    <td><button class="btn btn-outline-primary"><i class="bi bi-pen"></i></button></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td>Đọc hiểu 01</td>
+                    <td>N4</td>
+                    <td><img src="https://th.bing.com/th/id/OIP.Mfv760VApdREuyqGlGwjFgAAAA?w=255&h=85&c=7&r=0&o=5&dpr=1.3&pid=1.7"></td>
+                    <td><button class="btn btn-outline-danger"><i class="bi bi-trash"></i></button></td>
+                    <td><button class="btn btn-outline-primary"><i class="bi bi-pen"></i></button></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">5</th>
+                    <td>Kính ngữ</td>
+                    <td>N2</td>
+                    <td><img src="https://th.bing.com/th/id/OIP.Mfv760VApdREuyqGlGwjFgAAAA?w=255&h=85&c=7&r=0&o=5&dpr=1.3&pid=1.7"></td>
+                    <td><button class="btn btn-outline-danger"><i class="bi bi-trash"></i></button></td>
+                    <td><button class="btn btn-outline-primary"><i class="bi bi-pen"></i></button></td>
+                  </tr>
+                </tbody>
+              </table>
         </div>
     </div>
     <script src="../js/quanlybaithi.js"></script>
