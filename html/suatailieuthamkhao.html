@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Them de thi</title>
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <link rel="stylesheet" href="../css/quanlydethi.css">
+    
+</head>
+<body>
+    <div class="head sticky-top">
+        <div class="container-fluid d-flex justify-content-end" style="background-color: #303030;" id="user-info">
+            <img src="../images/avatar.jpeg" alt="" height="40px" width="40px">
+            <div class="dropdown">
+                <button class="btn btn-outline dropdown-toggle border-0 menu" type="button" id="triggerId"
+                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Xin chào! Phan Phước Sang
+                </button>
+                <div class="dropdown-menu" aria-labelledby="triggerId">
+                    <a class="dropdown-item" href="#"><i class="bi bi-person-circle"></i>Thông tin tài khoản</a>
+                    <a class="dropdown-item" href="#"><i class="bi bi-key-fill"></i>Đổi mật khẩu</a>
+                    <a class="dropdown-item" href="#"><i class="bi bi-file-earmark-fill"></i>Lịch sử làm bài</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#"><i class="bi bi-box-arrow-right"></i>Đăng xuất</a>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="container-fluid navbar d-flex-inline justify-content-end align-item-center gap-5">
+            <center class="navbar-item"><a href="">Trang chủ</a></center>
+            <center class="navbar-item"><a href="">Cập nhật JLPT 2023</a></center>
+            <center class="navbar-item"><a href="">Tài liệu free</a></center>
+            <center class="navbar-item"><a href="">Sách học JLPT</a></center>
+            <center class="navbar-item"><a href="">Đề thi chuẩn JLPT</a></center>
+            <a class="btn btn-test" href="">Vào thi ngay</a>
+        </div>
+    </div>
+    <!-- content -->
+    <div class="row d-flex align-items-center justify-content-center border border-success mt-5">
+        <div class="col-sm-5 mt-2">
+            <h4 style="text-align: center;">Sửa thông tin tài liệu tham khảo</h4>
+            <form>
+                <input class="form-control" type="text" placeholder="Tên tài liệu" required>
+                <input class="form-control mt-3" type="text" placeholder="Link tài liệu" required>
+                <div class="form-group d-flex justify-content-center mt-4">
+                    <label  style="margin-right: 10px;">Chọn hình ảnh</label>
+                    <input type="file" class="form-control-file" id="image-file" accept=".jpg,.jpeg,.png,.gif" required>
+                </div>
+                <div class="form-group d-flex justify-content-center mt-4">
+                    <img style="width: 150px; height: 150px;" alt="" id="preview-img">
+                </div>
+                <div class="form-group d-flex justify-content-center mt-4">
+                    <button class="btn btn-danger mb-3">Huỷ</button> &nbsp;&nbsp;&nbsp;&nbsp;
+                    <button class="btn btn-success mb-3">Lưu</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="../js/themtailieuthamkhao.js"></script>
+</body>
+</html>
