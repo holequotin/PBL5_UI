@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi tiet de thi</title>
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <link rel="stylesheet" href="../css/chitietdethi.css">
+    
+</head>
+<body>
+    <div class="head sticky-top">
+        <div class="container-fluid d-flex justify-content-end" style="background-color: #303030;" id="user-info">
+            <img src="../images/avatar.jpeg" alt="" height="40px" width="40px">
+            <div class="dropdown">
+                <button class="btn btn-outline dropdown-toggle border-0 menu" type="button" id="triggerId"
+                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Xin chào! Phan Phước Sang
+                </button>
+                <div class="dropdown-menu" aria-labelledby="triggerId">
+                    <a class="dropdown-item" href="#"><i class="bi bi-person-circle"></i>Thông tin tài khoản</a>
+                    <a class="dropdown-item" href="#"><i class="bi bi-key-fill"></i>Đổi mật khẩu</a>
+                    <a class="dropdown-item" href="#"><i class="bi bi-file-earmark-fill"></i>Lịch sử làm bài</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#"><i class="bi bi-box-arrow-right"></i>Đăng xuất</a>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="container-fluid navbar d-flex-inline justify-content-end align-item-center gap-5">
+            <center class="navbar-item"><a href="">Trang chủ</a></center>
+            <center class="navbar-item"><a href="">Cập nhật JLPT 2023</a></center>
+            <center class="navbar-item"><a href="">Tài liệu free</a></center>
+            <center class="navbar-item"><a href="">Sách học JLPT</a></center>
+            <center class="navbar-item"><a href="">Đề thi chuẩn JLPT</a></center>
+            <a class="btn btn-test" href="">Vào thi ngay</a>
+        </div>
+    </div>
+    
+    <!-- content -->
+    <div class="container mt-3">
+        <div class="row justify-content-center" style="text-align:center; margin-top: 50px;">
+            <h1>2022年7月のJLPTN3</h1>
+        </div>
+        <div class="row card card-body mb-2">
+            <p><i>Đề thi gồm có 3 mục: [もじ・ごい] , [ぶんぽう・どっかい] , [ちょうかい]. Bấm vào từng mục để hiện/ẩn nội dung.</i></p>
+        </div>
+        <div class="row">
+            <p>
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample">
+                  もじ・ごい
+                </button>
+            </p>
+            <div class="collapse" id="collapseExample1">
+                <div class="test-content m-lg-3">
+                    <div class="row">
+                        <p>
+                            <button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample11" aria-expanded="false" aria-controls="collapseExample">
+                              もんだい１　＿＿＿のことばはひらがなでどうどうかきますか。１・２・３・４からいちばんいいものをひとつえらんでください。
+                            </button>
+                        </p>
+                        <div class="collapse" id="collapseExample11">
+                            <div class="test-content">
+                                <!-- <h5>１．くつに石入っていました</h5> -->
+                                <!-- <div class="container"> -->
+                                <form>
+                                    <div class="form-group">
+                                        <p>１．くつに<u>石</u>入っていました</h5></p>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="answer" id="answer1" value="option1">
+                                                <label class="form-check-label" for="answer1">
+                                                いし
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="answer" id="answer2" value="option2">
+                                            <label class="form-check-label" for="answer2">
+                                                すな
+                                            </label>
+                                            </div>
+                                            <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="answer" id="answer3" value="option3">
+                                            <label class="form-check-label" for="answer3">
+                                                くさ
+                                            </label>
+                                            </div>
+                                            <div class="form-check mb-3">
+                                            <input class="form-check-input" type="radio" name="answer" id="answer4" value="option4">
+                                            <label class="form-check-label" for="answer4">
+                                                えだえだ
+                                            </label>
+                                        </div>
+                                        <p>２．にほんでいろいろな<u>経験</u>をします</h5></p>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="answer11" id="answer1" value="option1">
+                                                <label class="form-check-label" for="answer1">
+                                                けいげん
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="answer11" id="answer2" value="option2">
+                                            <label class="form-check-label" for="answer2">
+                                                けいけん
+                                            </label>
+                                            </div>
+                                            <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="answer11" id="answer3" value="option3">
+                                            <label class="form-check-label" for="answer3">
+                                                けけん
+                                            </label>
+                                            </div>
+                                            <div class="form-check mb-3">
+                                            <input class="form-check-input" type="radio" name="answer11" id="answer4" value="option4">
+                                            <label class="form-check-label" for="answer4">
+                                                けげん
+                                            </label>
+                                            </div>
+                                            <p>3．<u>店員</u>にトイレがどこにあるかききました</h5></p>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="answer12" id="answer1" value="option1">
+                                                <label class="form-check-label" for="answer1">
+                                                ていん
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="answer12" id="answer2" value="option2">
+                                            <label class="form-check-label" for="answer2">
+                                                てんにん
+                                            </label>
+                                            </div>
+                                            <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="answer12" id="answer3" value="option3">
+                                            <label class="form-check-label" for="answer3">
+                                                ていん
+                                            </label>
+                                            </div>
+                                            <div class="form-check mb-3">
+                                            <input class="form-check-input" type="radio" name="answer12" id="answer4" value="option4">
+                                            <label class="form-check-label" for="answer4">
+                                                てんいん
+                                            </label>
+                                            </div>
+                                    </div>
+                                    
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <p>
+                            <button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample12" aria-expanded="false" aria-controls="collapseExample">
+                              もんだい２　＿＿＿のことばはひらがなでどうどうかきますか。１・２・３・４からいちばんいいものをひとつえらんでください。
+                            </button>
+                        </p>
+                        <div class="collapse" id="collapseExample12">
+                            <div class="test-content">
+                                <form>
+                                    <div class="form-group">
+                                        <p>４．すずきさんは<u>あおい</u>シャツをきています。</h5></p>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="answer" id="answer1" value="option1">
+                                                <label class="form-check-label" for="answer1">
+                                                    青い
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="answer" id="answer2" value="option2">
+                                            <label class="form-check-label" for="answer2">
+                                                赤い
+                                            </label>
+                                            </div>
+                                            <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="answer" id="answer3" value="option3">
+                                            <label class="form-check-label" for="answer3">
+                                                白い
+                                            </label>
+                                            </div>
+                                            <div class="form-check mb-3">
+                                            <input class="form-check-input" type="radio" name="answer" id="answer4" value="option4">
+                                            <label class="form-check-label" for="answer4">
+                                                黒い
+                                            </label>
+                                        </div>
+                                        <p>２．かいぎの<u>ばしょ</u>をしえてください。</h5></p>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="answer11" id="answer1" value="option1">
+                                                <label class="form-check-label" for="answer1">
+                                                場所
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="answer11" id="answer2" value="option2">
+                                            <label class="form-check-label" for="answer2">
+                                                馬鈞
+                                            </label>
+                                            </div>
+                                            <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="answer11" id="answer3" value="option3">
+                                            <label class="form-check-label" for="answer3">
+                                                特所
+                                            </label>
+                                            </div>
+                                            <div class="form-check mb-3">
+                                            <input class="form-check-input" type="radio" name="answer11" id="answer4" value="option4">
+                                            <label class="form-check-label" for="answer4">
+                                                台所
+                                            </label>
+                                            </div>
+                                            
+                                    </div>
+                                    
+                                </form>
+                                  <!-- </div> -->
+                                  
+                                
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <p>
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">
+                  ぶんぽう・どっかい
+                </button>
+            </p>
+            <div class="collapse" id="collapseExample2">
+                <div class="test-content m-lg-3">
+                    <div class="row">
+                        <p>
+                            <button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample21" aria-expanded="false" aria-controls="collapseExample">
+                              もんだい１　（　　　）に何を入れますか。１・２・３・４からいちばんいいものを一つえらんでください。
+                            </button>
+                        </p>
+                        <div class="collapse" id="collapseExample21">
+                            <div class="test-content">
+                                <form>
+                                    <div class="form-group">
+                                        <p>１．くつに<u>（　　）</u>入っていました</h5></p>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="answer" id="answer1" value="option1">
+                                                <label class="form-check-label" for="answer1">
+                                                いし
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="answer" id="answer2" value="option2">
+                                            <label class="form-check-label" for="answer2">
+                                                すな
+                                            </label>
+                                            </div>
+                                            <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="answer" id="answer3" value="option3">
+                                            <label class="form-check-label" for="answer3">
+                                                くさ
+                                            </label>
+                                            </div>
+                                            <div class="form-check mb-3">
+                                            <input class="form-check-input" type="radio" name="answer" id="answer4" value="option4">
+                                            <label class="form-check-label" for="answer4">
+                                                えだえだ
+                                            </label>
+                                        </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="answer11" id="answer1" value="option1">
+                                                <label class="form-check-label" for="answer1">
+                                                けいげん
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="answer11" id="answer2" value="option2">
+                                            <label class="form-check-label" for="answer2">
+                                                けいけん
+                                            </label>
+                                            </div>
+                                            <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="answer11" id="answer3" value="option3">
+                                            <label class="form-check-label" for="answer3">
+                                                けけん
+                                            </label>
+                                            </div>
+                                            <div class="form-check mb-3">
+                                            <input class="form-check-input" type="radio" name="answer11" id="answer4" value="option4">
+                                            <label class="form-check-label" for="answer4">
+                                                けげん
+                                            </label>
+                                            </div>
+                                            <p>3．<u>店員</u>にトイレがどこにあるかききました</h5></p>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="answer12" id="answer1" value="option1">
+                                                <label class="form-check-label" for="answer1">
+                                                ていん
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="answer12" id="answer2" value="option2">
+                                            <label class="form-check-label" for="answer2">
+                                                てんにん
+                                            </label>
+                                            </div>
+                                            <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="answer12" id="answer3" value="option3">
+                                            <label class="form-check-label" for="answer3">
+                                                ていん
+                                            </label>
+                                            </div>
+                                            <div class="form-check mb-3">
+                                            <input class="form-check-input" type="radio" name="answer12" id="answer4" value="option4">
+                                            <label class="form-check-label" for="answer4">
+                                                てんいん
+                                            </label>
+                                            </div>
+                                    </div>                                    
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <p>
+                            <button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample22" aria-expanded="false" aria-controls="collapseExample">
+                              もんだい２　４から５に何を入れますか文章の意味考えて。１・２・３・４からいちばんいいものをひとつえらんでください。
+                            </button>
+                            
+                        </p>
+                        <div class="collapse" id="collapseExample22">
+                            <div class="test-content">
+                                <div class="card card-body">
+                                    <p>
+                                        以下は、日本語で書かれた、約3倍の長さのランダムな文章です。
+                                        先日、私たちは友人たちと一緒に旅行に行きました。行先は、日本の北海道というところでした。そこは自然が豊かで、空気も澄んでいて、とても気持ちが良かったです。
+                                        旅行の第一日目は、札幌という都市に滞在しました。そこでは、大通公園という広場に行って、地元のグルメを楽しみました。蟹やエビなど、新鮮な海の幸がたくさんあり、どれも美味しかったです。
+                                        翌日は、十勝岳という山に登りました。山頂からの景色は絶景で、息をのむ美しさでした。しかし、登りはかなりきつく、足腰が疲れました。それでも、景色を見た瞬間は、その苦労も吹っ飛びました。
+                                        次の日は、美瑛という町に行きました。そこは、ラベンダー畑が広がっていて、とてもロマンチックな雰囲気でした。また、農場では、新鮮な野菜や果物を買うことができ、その味は格別でした。
+                                        最後の日は、小樽という街に行きました。そこは、レトロな街並みが残っていて、とても雰囲気が良かったです。また、小樽の名物である「小樽のスイーツ」というお菓子を食べたり、港町ならではの景色を楽しんだりしました。
+                                        旅行を終えて、私たちはとても充実した気持ちになりました。北海道は、まだまだ見て回るところがたくさんあるので、また行きたいと思います。
+                                    </p>
+                                </div>
+                                <form>
+                                    <div class="form-group">
+                                        <p>４．旅行の第一日目に私たちは何をしましたか。</h5></p>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="answer" id="answer1" value="option1">
+                                                <label class="form-check-label" for="answer1">
+                                                    十勝岳に登りました。
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="answer" id="answer2" value="option2">
+                                            <label class="form-check-label" for="answer2">
+                                                美瑛の町に行きました。
+                                            </label>
+                                            </div>
+                                            <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="answer" id="answer3" value="option3">
+                                            <label class="form-check-label" for="answer3">
+                                                小樽の街に行きました。
+                                            </label>
+                                            </div>
+                                            <div class="form-check mb-3">
+                                            <input class="form-check-input" type="radio" name="answer" id="answer4" value="option4">
+                                            <label class="form-check-label" for="answer4">
+                                                札幌の大通公園に行って、地元のグルメを楽しみました。
+                                            </label>
+                                        </div>
+                                        <p>５．北海道の美瑛という町で何を見ましたか。</h5></p>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="answer11" id="answer1" value="option1">
+                                                <label class="form-check-label" for="answer1">
+                                                    ラベンダー畑
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="answer11" id="answer2" value="option2">
+                                            <label class="form-check-label" for="answer2">
+                                                大通公園
+                                            </label>
+                                            </div>
+                                            <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="answer11" id="answer3" value="option3">
+                                            <label class="form-check-label" for="answer3">
+                                                小樽の街並み
+                                            </label>
+                                            </div>
+                                            <div class="form-check mb-3">
+                                            <input class="form-check-input" type="radio" name="answer11" id="answer4" value="option4">
+                                            <label class="form-check-label" for="answer4">
+                                                十勝岳
+                                            </label>
+                                            </div>
+                                            
+                                    </div>
+                                    
+                                </form>
+                                  <!-- </div> -->
+                                  
+                                
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <p>
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample">
+                    ちょうかい
+                </button>
+            </p>
+            <div class="collapse" id="collapseExample3">
+                <div class="test-content m-lg-3">
+                    <div class="row">
+                        <p>
+                            <button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample31" aria-expanded="false" aria-controls="collapseExample">
+                              もんだい１では、まずしつもんを聞いてください。それから話しを聞いて、もんだいようしの１から４の中からいちばんいいものを一つえらんでください。
+                            </button>
+                        </p>
+                        <div class="collapse" id="collapseExample31">
+                            <div class="test-content">
+                                <!-- <h5>１．くつに石入っていました</h5> -->
+                                <!-- <div class="container"> -->
+                                <form>
+                                    <div class="form-group">
+                                        <p><b>１ばん</b></h5></p>
+                                        <img src="../images/choukai1.png" alt="">
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="answer" id="answer1" value="option1">
+                                                <label class="form-check-label" for="answer1">
+                                               1
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="answer" id="answer2" value="option2">
+                                            <label class="form-check-label" for="answer2">
+                                                2
+                                            </label>
+                                            </div>
+                                            <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="answer" id="answer3" value="option3">
+                                            <label class="form-check-label" for="answer3">
+                                                3
+                                            </label>
+                                            </div>
+                                            <div class="form-check mb-3">
+                                            <input class="form-check-input" type="radio" name="answer" id="answer4" value="option4">
+                                            <label class="form-check-label" for="answer4">
+                                                4
+                                            </label>
+                                        </div>
+                                        <p><b>２ばん</b></h5></p>
+                                        <img src="../images/choukai2.png" alt="">
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="answer11" id="answer1" value="option1">
+                                                <label class="form-check-label" for="answer1">
+                                            ア　イ
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="answer11" id="answer2" value="option2">
+                                            <label class="form-check-label" for="answer2">
+                                                ア　エ
+                                            </label>
+                                            </div>
+                                            <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="answer11" id="answer3" value="option3">
+                                            <label class="form-check-label" for="answer3">
+                                                イ　ウ
+                                            </label>
+                                            </div>
+                                            <div class="form-check mb-3">
+                                            <input class="form-check-input" type="radio" name="answer11" id="answer4" value="option4">
+                                            <label class="form-check-label" for="answer4">
+                                                イ　エ
+                                            </label>
+                                            </div>
+                                            <p><b>３ばん</b></h5></p>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="answer12" id="answer1" value="option1">
+                                                <label class="form-check-label" for="answer1">
+                                                    ８時間に きようしつ
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="answer12" id="answer2" value="option2">
+                                            <label class="form-check-label" for="answer2">
+                                                ８じはんに たいいくかんの前
+                                            </label>
+                                            </div>
+                                            <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="answer12" id="answer3" value="option3">
+                                            <label class="form-check-label" for="answer3">
+                                                ９じに きようしつ
+                                            </label>
+                                            </div>
+                                            <div class="form-check mb-3">
+                                            <input class="form-check-input" type="radio" name="answer12" id="answer4" value="option4">
+                                            <label class="form-check-label" for="answer4">
+                                                ９じに たいいくかんの前
+                                            </label>
+                                            </div>
+                                    </div>
+                                    
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+    </div>
+    
+    <script src="#"></script>
+</body>
+</html>
