@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Danh sách đề thi</title>
+    <title>Thông tin đề thi</title>
     <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
@@ -13,8 +13,10 @@
         crossorigin="anonymous"></script>
     <!-- Bootstrap icon -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-    <link rel="stylesheet" href="../css/thi_new.css">
+    <link rel="stylesheet" href="../css/thongtindethi.css">
     
 </head>
 <body>
@@ -64,64 +66,74 @@
     </div>
 
     <!-- content -->
-    <div class="container-fluid no-padding content-area no-sidebar" style="background-image: url(../images/background3.png); background-repeat: repeat-y; background-size: 100% auto;">
-        <div class="row align-items-center" style="height: 100px;">
-            <div class="col-sm-10">
-                <h3 style="text-align: center;">THI JLPT N1</h3>
-            </div>
+    <div class="container no-padding content-area no-sidebar">
+        <div class="row align-items-center" style="height: 100px;">     
+            <h2 style="text-align: center;">2022年7月のJLPT N3</h2>
         </div>
-        <div class="row">
-            <div class="col-sm-1"></div>
-            <div class="col-sm-8">
-                <div class="row">
-                    <!-- for nguyên cụm ni -->
-                    <div class="col">
-                        <div class="card mt-3" style="width: 18rem;">
-                            <img class="card-img-top" src="../images/286x180.jfif" alt="Card image cap">
-                            <div class="card-body">
-                            <h5 class="card-title">N1</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Vào thi</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!--  -->
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="row">
-                    <h4 style="text-align: center;">TRÌNH ĐỘ</h4>
-                </div>
-                <div class="row mt-3">
-                    <div class="col d-flex justify-content-center align-items-center">
-                        <a href="#" class="btn btn-outline-dark btn-custom">N5</a>
-                    </div>
-                </div>
-                <div class="row mt-3">
-                    <div class="col d-flex justify-content-center align-items-center">
-                        <a href="#" class="btn btn-outline-dark btn-custom">N4</a>
-                    </div>
-                </div>
-                <div class="row mt-3">
-                    <div class="col d-flex justify-content-center align-items-center">
-                        <a href="#" class="btn btn-outline-dark btn-custom">N3</a>
-                    </div>
-                </div>
-                <div class="row mt-3">
-                    <div class="col d-flex justify-content-center align-items-center">
-                        <a href="#" class="btn btn-outline-dark btn-custom">N2</a>
-                    </div>
-                </div>
-                <div class="row mt-3">
-                    <div class="col d-flex justify-content-center align-items-center">
-                        <a href="#" class="btn btn-outline-dark btn-custom">N1</a>
-                    </div>
-                </div>
-            </div>
+        <div class="row card card-body mb-4">
+            <p class="mb-0"><i>Đề thi gồm có 3 mục: <b>「文字・語彙」</b> , <b>「文法・読解」</b> , <b>「聴解」</b>. Bấm vào từng mục để hiện/ẩn nội dung. 
+                Sau khi thi xong, hãy bấm vào nút <b style="color: orange;">Xem kết quả</b> để biết kết quả thi của bạn.
+            </i></p>
         </div>
-        <div class="row" style="height: 100px;">
 
+
+        <div class="row justify-content-start border border-2">
+            <button class="btn btn-primary pri-custom" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample">
+                <b>「文字・語彙」</b>
+            </button>
+            <div class="collapse mt-2" id="collapseExample1">
+                <div class="card card-body border-2 mb-3" style="border-radius: 0; border-color: #f1f1f1;">
+                    <h1 style="text-align: center; font-size: 4.5em;">N3</h1>
+                    <h4 style="text-align: center;">げんごちしき（もじ・ごい）</h4>
+                    <h2 style="text-align: center;">言語知識 (文字・語彙)</h2>
+                    <h2 style="text-align: center;">（30ぷん）</h2>
+                </div>
+                <h2 style="text-align: center; color: blue;">がんばれ！</h2>
+                <div class="d-flex justify-content-center mt-4 mb-4">
+                    <a href="#" class="btn btn-warning">Bắt đầu</a>
+                </div>
+            </div>
         </div>
+
+        <div class="row justify-content-start border border-2 mt-4">
+            <button class="btn btn-primary pri-custom" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">
+                <b>「文法・読解」</b>
+            </button>
+            <div class="collapse mt-2" id="collapseExample2">
+                <div class="card card-body border-2 mb-3" style="border-radius: 0; border-color: #f1f1f1;">
+                    <h1 style="text-align: center; font-size: 4.5em;">N3</h1>
+                    <h4 style="text-align: center;">げんごちしき（ぶんぽう）・どっかい</h4>
+                    <h2 style="text-align: center;">言語知識 (文法)・読解</h2>
+                    <h2 style="text-align: center;">（70ぷん）</h2>
+                </div>
+                <h2 style="text-align: center; color: blue;">がんばれ！</h2>
+                <div class="d-flex justify-content-center mt-4 mb-4">
+                    <a href="#" class="btn btn-warning">Bắt đầu</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-start border border-2 mt-4">
+            <button class="btn btn-primary pri-custom" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample">
+                <b>「聴解」</b>
+            </button>
+            <div class="collapse mt-2" id="collapseExample3">
+                <div class="card card-body border-2 mb-3" style="border-radius: 0; border-color: #f1f1f1;">
+                    <h1 style="text-align: center; font-size: 4.5em;">N3</h1>
+                    <h4 style="text-align: center;">ちょうかい</h4>
+                    <h2 style="text-align: center;">聴解</h2>
+                    <h2 style="text-align: center;">（40ぷん）</h2>
+                </div>
+                <h2 style="text-align: center; color: blue;">がんばれ！</h2>
+                <div class="d-flex justify-content-center mt-4 mb-4">
+                    <a href="#" class="btn btn-warning">Bắt đầu</a>
+                </div>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center mt-lg-5">
+            <a href="#" class="btn btn-warning" style="width: 150px;">Xem kết quả</a>
+        </div>
+        <div class="row" style="height: 400px;"></div>
     </div>
     <!-- end content -->
     <!-- footer -->
